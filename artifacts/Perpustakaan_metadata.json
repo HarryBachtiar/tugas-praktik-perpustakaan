@@ -1,0 +1,326 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "BukuDihapus",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "BukuDiperbarui",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "BukuDitambahkan",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "pemanggil",
+						"type": "address"
+					}
+				],
+				"name": "DapatkanBuku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "HapusBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_penulis",
+						"type": "string"
+					}
+				],
+				"name": "PerbaruiBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_penulis",
+						"type": "string"
+					}
+				],
+				"name": "TambahBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "buku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_alamat",
+						"type": "address"
+					}
+				],
+				"name": "isAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "jumlahBuku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pemilik",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/perpustakan.sol": "Perpustakaan"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/perpustakan.sol": {
+			"keccak256": "0x7059cddd671b56befd816f9e0570ea9b8bd80925a32fddcc495ef3e2aaf17fe4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff3ca73398ed09c831057d9a8da847fba63a801ed7a63c37044e3e068fc4c0ab",
+				"dweb:/ipfs/QmPeAcRRHMXa9oeSwiziKsVvnbS32siNwn5cCVk7CWC525"
+			]
+		}
+	},
+	"version": 1
+}
